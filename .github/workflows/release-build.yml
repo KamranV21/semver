@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  build-and-deploy:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Build release
@@ -13,4 +13,4 @@ jobs:
         uses: otymko/setup-onescript@v1.5
         with:
           version: lts
-      - run: oscript /.github/workflows/scripts/release-build.os
+        run: oscript /.github/workflows/scripts/release-build.os
