@@ -8,6 +8,9 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./scripts
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -16,4 +19,4 @@ jobs:
         with:
           version: lts
       - name: Run version update script
-        run: oscript /.github/workflows/scripts/release-build.os
+        run: oscript ./release-build.os
