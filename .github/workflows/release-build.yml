@@ -1,0 +1,17 @@
+name: Release build
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build release
+        - uses: actions/checkout@v2
+        - uses: otymko/setup-onescript@v1.5
+        with:
+          version: lts
+      - run: oscript /.github/workflows/scripts/release-build.os

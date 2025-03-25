@@ -33,4 +33,5 @@
   <defaultRoles>Role.SV_ОсновнаяРоль</defaultRoles>
   <compatibilityMode>8.3.23</compatibilityMode>
   <roles>Role.SV_ОсновнаяРоль</roles>
+  <commonModules>CommonModule.SV_ОбщийМодуль</commonModules>
 </mdclass:Configuration>
