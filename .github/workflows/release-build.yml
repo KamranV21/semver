@@ -2,15 +2,16 @@ name: Release build
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Build release
+      - name: Checkout code
         uses: actions/checkout@v2
+      - name: Set up OneScript
         uses: otymko/setup-onescript@v1.5
         with:
           version: lts
