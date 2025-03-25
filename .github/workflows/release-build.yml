@@ -1,22 +1,22 @@
-name: Release build
+# name: Release build
 
-on:
-  push:
-    branches: [master]
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: [master]
+#   workflow_dispatch:
 
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./scripts
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Set up OneScript
-        uses: otymko/setup-onescript@v1.5
-        with:
-          version: lts
-      - name: Run version update script
-        run: oscript ./release-build.os
+# jobs:
+#   release:
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         working-directory: ./scripts
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#       - name: Set up OneScript
+#         uses: otymko/setup-onescript@v1.5
+#         with:
+#           version: lts
+#       - name: Run version update script
+#         run: oscript ./release-build.os
