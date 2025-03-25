@@ -15,4 +15,5 @@ jobs:
         uses: otymko/setup-onescript@v1.5
         with:
           version: lts
+      - name: Run version update script
         run: oscript /.github/workflows/scripts/release-build.os
