@@ -31,11 +31,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <defaultRoles>Role.SV_ОсновнаяРоль</defaultRoles>
-  <version>
-  <!-- x-release-please-start-version -->
-  0.0.0
-  <!-- x-release-please-end -->
-  </version>
+  <version>0.0.0<!-- x-release-please-version --></version>
   <compatibilityMode>8.3.23</compatibilityMode>
   <roles>Role.SV_ОсновнаяРоль</roles>
   <commonModules>CommonModule.SV_ОбщийМодуль</commonModules>
