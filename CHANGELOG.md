@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/KamranV21/semver/compare/v1.9.0...v1.10.0) (2025-03-27)
+
+
+### Features
+
+* Improvement ([6eb20a7](https://github.com/KamranV21/semver/commit/6eb20a779c8c7b877b316e637ada4539c5304e8e))
+
 ## [1.9.0](https://github.com/KamranV21/semver/compare/v1.8.0...v1.9.0) (2025-03-27)
 
 
